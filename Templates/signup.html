@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		
+	</title>
+</head>
+<body>
+
+<form action="" method="POST">
+	<div style="text-align: center; margin-top: 180px">
+		{% csrf_token %}
+	{% for id in form %}
+	{{id.label_tag}}  {{id}} {{id.errors|striptags}}<br><br>
+
+	{% endfor %}
+
+<button>Submit</button><br><br>
+<a href="/login">Already Have Account Click Here </a>
+	</div>
+</form>
+
+</body>
+</html>
