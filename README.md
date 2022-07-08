@@ -1,5 +1,3 @@
-# library
-
 # Library 
 Requirements:
 Django 3.2.8
